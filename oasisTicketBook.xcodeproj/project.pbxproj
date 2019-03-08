@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16E2F941F7EEBAAE70BF5E70 /* Pods_oasisTicketBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 346CFE44610F99F4AC32507C /* Pods_oasisTicketBook.framework */; };
 		E1D80C7821EA55870076E972 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D80C7721EA55870076E972 /* AppDelegate.swift */; };
 		E1D80C7A21EA55870076E972 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D80C7921EA55870076E972 /* ViewController.swift */; };
 		E1D80C7D21EA55870076E972 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1D80C7B21EA55870076E972 /* Main.storyboard */; };
 		E1D80C7F21EA55880076E972 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1D80C7E21EA55880076E972 /* Assets.xcassets */; };
 		E1D80C8221EA55880076E972 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1D80C8021EA55880076E972 /* LaunchScreen.storyboard */; };
+		E1D80C8A21EA5C620076E972 /* TicketEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D80C8921EA5C620076E972 /* TicketEntry.swift */; };
+		E1D80C8D21EA68680076E972 /* TicketEntryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D80C8B21EA68680076E972 /* TicketEntryTableViewCell.swift */; };
+		E1D80C8E21EA68680076E972 /* TicketEntryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1D80C8C21EA68680076E972 /* TicketEntryTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		346CFE44610F99F4AC32507C /* Pods_oasisTicketBook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_oasisTicketBook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A6D377BF93CCF3D5CF2EBA4 /* Pods-oasisTicketBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-oasisTicketBook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-oasisTicketBook/Pods-oasisTicketBook.debug.xcconfig"; sourceTree = "<group>"; };
+		95D07EEC3CA32463D0C498B1 /* Pods-oasisTicketBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-oasisTicketBook.release.xcconfig"; path = "Pods/Target Support Files/Pods-oasisTicketBook/Pods-oasisTicketBook.release.xcconfig"; sourceTree = "<group>"; };
 		E1D80C7421EA55870076E972 /* oasisTicketBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oasisTicketBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1D80C7721EA55870076E972 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1D80C7921EA55870076E972 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +29,9 @@
 		E1D80C7E21EA55880076E972 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1D80C8121EA55880076E972 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1D80C8321EA55880076E972 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1D80C8921EA5C620076E972 /* TicketEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketEntry.swift; sourceTree = "<group>"; };
+		E1D80C8B21EA68680076E972 /* TicketEntryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketEntryTableViewCell.swift; sourceTree = "<group>"; };
+		E1D80C8C21EA68680076E972 /* TicketEntryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TicketEntryTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16E2F941F7EEBAAE70BF5E70 /* Pods_oasisTicketBook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D641D809D6D637E9E24E0FED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				346CFE44610F99F4AC32507C /* Pods_oasisTicketBook.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E1D80C6B21EA55870076E972 = {
 			isa = PBXGroup;
 			children = (
 				E1D80C7621EA55870076E972 /* oasisTicketBook */,
 				E1D80C7521EA55870076E972 /* Products */,
+				ED5DF49B6DACD2C24FB71B71 /* Pods */,
+				D641D809D6D637E9E24E0FED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +81,20 @@
 				E1D80C7E21EA55880076E972 /* Assets.xcassets */,
 				E1D80C8021EA55880076E972 /* LaunchScreen.storyboard */,
 				E1D80C8321EA55880076E972 /* Info.plist */,
+				E1D80C8921EA5C620076E972 /* TicketEntry.swift */,
+				E1D80C8B21EA68680076E972 /* TicketEntryTableViewCell.swift */,
+				E1D80C8C21EA68680076E972 /* TicketEntryTableViewCell.xib */,
 			);
 			path = oasisTicketBook;
+			sourceTree = "<group>";
+		};
+		ED5DF49B6DACD2C24FB71B71 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A6D377BF93CCF3D5CF2EBA4 /* Pods-oasisTicketBook.debug.xcconfig */,
+				95D07EEC3CA32463D0C498B1 /* Pods-oasisTicketBook.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E1D80C8621EA55880076E972 /* Build configuration list for PBXNativeTarget "oasisTicketBook" */;
 			buildPhases = (
+				B9DC0EAC474F2A346A3A7CAD /* [CP] Check Pods Manifest.lock */,
 				E1D80C7021EA55870076E972 /* Sources */,
 				E1D80C7121EA55870076E972 /* Frameworks */,
 				E1D80C7221EA55870076E972 /* Resources */,
+				413C9A9015C3A45031B16715 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,11 +159,53 @@
 			files = (
 				E1D80C8221EA55880076E972 /* LaunchScreen.storyboard in Resources */,
 				E1D80C7F21EA55880076E972 /* Assets.xcassets in Resources */,
+				E1D80C8E21EA68680076E972 /* TicketEntryTableViewCell.xib in Resources */,
 				E1D80C7D21EA55870076E972 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		413C9A9015C3A45031B16715 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-oasisTicketBook/Pods-oasisTicketBook-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-oasisTicketBook/Pods-oasisTicketBook-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9DC0EAC474F2A346A3A7CAD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-oasisTicketBook-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E1D80C7021EA55870076E972 /* Sources */ = {
@@ -137,6 +214,8 @@
 			files = (
 				E1D80C7A21EA55870076E972 /* ViewController.swift in Sources */,
 				E1D80C7821EA55870076E972 /* AppDelegate.swift in Sources */,
+				E1D80C8D21EA68680076E972 /* TicketEntryTableViewCell.swift in Sources */,
+				E1D80C8A21EA5C620076E972 /* TicketEntry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +359,7 @@
 		};
 		E1D80C8721EA55880076E972 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A6D377BF93CCF3D5CF2EBA4 /* Pods-oasisTicketBook.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -292,12 +372,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = wctech.oasisTicketBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
 		E1D80C8821EA55880076E972 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95D07EEC3CA32463D0C498B1 /* Pods-oasisTicketBook.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -310,7 +391,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = wctech.oasisTicketBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
